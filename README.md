@@ -52,7 +52,7 @@ L'application expose des endpoints API REST pour générer des reçus. Vous pouv
        ```bash
        curl -X POST http://localhost:8080/taxe/genererRecu -H "Content-Type: application/json" -d '1 Book à 12.49\n1 Music CD à 14.99\n1 Chocolate Bar à 0.85'
        ```
-   - Réponse YAML attendue:
+   - Réponse attendue:
        ```yaml
        produits:
          - produit: Book
@@ -73,7 +73,7 @@ L'application expose des endpoints API REST pour générer des reçus. Vous pouv
        ```bash
        curl -X POST http://localhost:8080/taxe/genererRecu -H "Content-Type: application/json" -d '1 box of imported chocolates à 10.00\n1 imported bottle of perfume à 47.50'
        ```
-   - Réponse YAML attendue:
+   - Réponse attendue:
        ```yaml
        produits:
          - produit: box of imported chocolates
