@@ -8,7 +8,6 @@ import com.taxePro.Repository.ProduitRepository;
 import com.taxePro.Repository.RecuRepository;
 import com.taxePro.Service.RecuService;
 import com.taxePro.Service.TaxeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -27,7 +26,7 @@ public class RecuServiceImpl implements RecuService {
     private final ProduitRepository produitRepository;
     private static final Logger logger = Logger.getLogger(RecuServiceImpl.class.getName());
 
-    @Autowired
+
     public RecuServiceImpl(TaxeService taxeService, RecuRepository recuRepository, ProduitRepository produitRepository) {
         this.taxeService = taxeService;
         this.recuRepository = recuRepository;

@@ -3,7 +3,6 @@ package com.taxePro.Controller;
 import com.taxePro.Entity.Produit;
 import com.taxePro.Entity.Recu;
 import com.taxePro.Service.RecuService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public class TaxeVente {
 
     private RecuService recuService ;
 
-    @Autowired
+
     public TaxeVente(RecuService recuService) {
         this.recuService = recuService;
     }

@@ -2,7 +2,6 @@ package com.taxePro.Service;
 
 import com.taxePro.Entity.Produit;
 import com.taxePro.Entity.Recu;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

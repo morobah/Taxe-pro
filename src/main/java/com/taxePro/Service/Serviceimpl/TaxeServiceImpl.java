@@ -16,15 +16,15 @@ public class TaxeServiceImpl implements TaxeService {
 
     @Override
     public double calculateTax(Produit produit) {
-        double taxe = 0 ;
+        double tax = 0 ;
         if (produit.getType() == ProductType.OTHER) {
-            taxe += produit.getPrice() * BASIC_SALES_TAX_RATE;
+            tax += produit.getPrice() * BASIC_SALES_TAX_RATE;
         }
         if (produit.getImported()) {
-            taxe += produit.getPrice() * IMPORT_DUTY_RATE;
+            tax += produit.getPrice() * IMPORT_DUTY_RATE;
         }
 
-        return roundToNearestFiveCents(taxe);
+        return roundToNearestFiveCents(tax);
     }
 
     private double roundToNearestFiveCents(double amount) {
