@@ -53,7 +53,7 @@ class RecuServiceImplTest {
 
         List<Produit> produits = Arrays.asList(book, musicCD, chocolateBar);
 
-        // Mock pour enregistrer les Produit
+        // Mock pour enregistrer les Recu
         when(produitRepository.save(any(Produit.class))).thenAnswer(i -> i.getArguments()[0]);
         when(recuRepository.save(any(Recu.class))).thenAnswer(i -> i.getArguments()[0]);
 
